@@ -1,0 +1,15 @@
+function scoreTest(str, right, omit, wrong){
+   var total = 0;
+for(var i = 0; i < str.length; i++){
+   if(str[i] == 0){
+   total += right;
+   }
+   else if(str[i] == 1){
+   total += omit; 
+  }
+  else if(str[i] == 2){
+  total -= wrong;
+  }
+  }
+  return total; 
+}
