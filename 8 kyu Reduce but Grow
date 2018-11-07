@@ -1,0 +1,4 @@
+function grow(x){
+  return x.reduce((product, current) => product * current);
+
+}
