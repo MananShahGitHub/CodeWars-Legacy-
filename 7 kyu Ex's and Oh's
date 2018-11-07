@@ -1,0 +1,20 @@
+function XO(str) {
+ str = str.toLowerCase();
+if(str=="" ||　str==null)return true;
+var list = str.split(""); 
+   var count = 0;
+   var count2 = 0;
+   for(var i = 0; i < list.length; i++){
+       if(list[i] == "x"){
+       count += 1; 
+       }
+       if(list[i] == "o" ){
+       count2 += 1;
+       }
+   }
+       if(count == count2){
+       return  true;
+       }
+       return false; 
+   }
+  
