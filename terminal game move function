@@ -1,0 +1,4 @@
+def move(position, roll):
+    roll = roll * 2
+    position = position + roll 
+    return position 
