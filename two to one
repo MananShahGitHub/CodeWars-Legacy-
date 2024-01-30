@@ -1,0 +1,6 @@
+def longest(a1, a2):
+    a3 = a1 + a2
+    a3 = sorted(set(a3))
+    a3 = ''.join(a3)
+    return a3
+    
