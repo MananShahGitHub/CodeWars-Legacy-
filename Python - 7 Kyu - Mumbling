@@ -1,0 +1,12 @@
+
+st = "Max"
+
+def accum(st):
+    final_string = ""
+
+    for i in range(len(st)):
+        final_string += (st[i] * (i + 1)).capitalize() + "-"
+
+    return final_string[:-1]
+
+print(accum(st))
