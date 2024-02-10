@@ -1,0 +1,8 @@
+function getAverage(marks){
+ var total = 0;
+for(var i = 0; i < marks.length; i++) {
+    total += marks[i];
+}
+var avg = Math.floor(total / marks.length);
+return avg;
+}
