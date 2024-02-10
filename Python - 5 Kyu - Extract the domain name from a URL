@@ -1,0 +1,10 @@
+def domain_name(url):
+    # Strip away protocols
+    url = url.replace("https://", "").replace("http://", "")
+    
+    # Strip away 'www.'
+    if url.startswith("www."):
+        url = url[4:]
+    
+    # Return part of the string before the first '.'
+    return url.split('.')[0]
