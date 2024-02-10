@@ -1,0 +1,6 @@
+def count_by(x, n):
+    result = []  # Create an empty list to hold the results
+    for i in range(1, n + 1):  # Loop from 1 to n (inclusive)
+        number = i * x  # Multiply the loop variable by x
+        result.append(number)  # Append the calculated number to the result list
+    return result  # Return the final result list
