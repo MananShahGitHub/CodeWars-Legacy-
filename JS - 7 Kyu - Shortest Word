@@ -1,0 +1,12 @@
+function findShort(s){
+s = s.split(' ');
+  
+  var shortest = s[0];
+  
+  for(var i = 0; i < s.length; i++){
+    if(shortest.length > s[i].length){
+      shortest = s[i];
+    }
+  }
+  return shortest.length;
+}
