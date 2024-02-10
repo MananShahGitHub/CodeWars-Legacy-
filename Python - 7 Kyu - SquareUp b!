@@ -1,0 +1,11 @@
+def square_up(n):
+    # Initialize the array with all zeros
+    arr = [0] * (n * n)
+    
+    # Loop over each block/row
+    for row in range(1, n + 1):
+        # Fill the block with a countdown starting from 'row'
+        for count in range(row):
+            arr[n * (row - 1) + (n - 1) - count] = count + 1
+            
+    return arr
