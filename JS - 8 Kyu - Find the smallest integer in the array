@@ -1,0 +1,5 @@
+class SmallestIntegerFinder {
+  findSmallestInt(boy) {
+    return Math.min(...boy);
+  }
+}
