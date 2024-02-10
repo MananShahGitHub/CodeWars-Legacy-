@@ -1,0 +1,7 @@
+function incrementer(nums) { 
+var arr = [];
+for(var i = 0; i < nums.length; i++)
+arr.push((nums[i]+i+1)%10)
+  return arr;
+
+}
