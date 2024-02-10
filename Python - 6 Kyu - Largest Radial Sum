@@ -1,0 +1,13 @@
+def largest_radial_sum(arr, d):
+    n = len(arr)
+    max_sum = float('-inf')
+    
+    # Iterate through the possible starting positions
+    for start in range(n//d):
+        current_sum = 0
+        # Iterate with steps of n//d to achieve equidistant summation
+        for j in range(start, start + d * (n//d), n//d):
+            current_sum += arr[j % n]
+        max_sum = max(max_sum, current_sum)
+        
+    return max_sum
