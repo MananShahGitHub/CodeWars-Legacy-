@@ -1,0 +1,8 @@
+function repeatStr (n, s) {
+var longStr = ""
+for(var i = 0; i < n; i++){
+  longStr += s;
+}
+ 
+ return longStr;
+ }
